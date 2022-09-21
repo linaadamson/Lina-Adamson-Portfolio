@@ -27,7 +27,7 @@ function sphereMove (radius) {
  let tagCloud = TagCloud('.sphere', texts, {
     radius: radius,
     maxSpeed: 'normal',
-    initSpeed: 'fast',
+    initSpeed: 'normal',
     direction: 135,
     keep: true,
 });

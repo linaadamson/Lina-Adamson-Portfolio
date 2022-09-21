@@ -15,10 +15,16 @@ li{
     list-style: none;
 }
 
+html,
+body{
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
 body{
     background-color: #121426;
     color: #FEFBEA;
-    overflow-x: hidden;
 }
 
 p {
@@ -67,7 +73,6 @@ p {
     min-height: 100vh;
     width: 90%;
     margin: auto;
-    overflow-x: hidden;
 }
 
 nav{
@@ -631,13 +636,13 @@ footer{
 
 /* FOOTER */
 .social-icons svg {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
 }
 
 .email-icon svg {
-    width: 17px;
-    height: 17px;
+    width: 19px;
+    height: 19px;
 }
 
 .vertical-line {
@@ -667,7 +672,7 @@ html {
 
 @media screen and (max-width: 850px) {
     html {
-        font-size: 66%;
+        font-size: 67%;
     }
 
 /* MAIN HEAD */
@@ -702,7 +707,7 @@ html {
 .hero-section {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
 }
 
  .hero-img img {
@@ -720,6 +725,10 @@ html {
  }
 
 /* ABOUT SECTION*/
+.section-headings {
+    padding-top: 2rem;
+}
+
 .line {
     width: 7%;
 }
@@ -730,9 +739,12 @@ html {
 }
 
 .about-text {
-    text-align: center;
     margin-right: 0;
     margin-top: 0;
+}
+
+.about-text p {
+    padding-top: 1.5rem;
 }
 
 .skills-sphere {
