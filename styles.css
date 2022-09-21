@@ -67,6 +67,7 @@ p {
     min-height: 100vh;
     width: 90%;
     margin: auto;
+    overflow-x: hidden;
 }
 
 nav{
@@ -184,6 +185,11 @@ nav{
 }
 
 /* ABOUT SECTION*/
+#about {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .container {
     width: 200%;
     display: flex;
@@ -661,7 +667,7 @@ html {
 
 @media screen and (max-width: 850px) {
     html {
-        font-size: 63%;
+        font-size: 66%;
     }
 
 /* MAIN HEAD */
@@ -803,7 +809,8 @@ html {
 }
 
 .reveal-text{
-    background-color: transparent;
+    /* background-color: transparent; */
+    display: none;
 }
 
 .img-cover {
@@ -850,6 +857,8 @@ footer {
 
 .footer-text {
     left: 0;
+    bottom: 10px;
+    font-size: 1rem;
 }
 
 
@@ -903,12 +912,11 @@ transform: rotate(45deg) translate(-3px, -5px);
 }
 
 body.no-scroll{
-    overflow: hidden;
+    overflow-y: hidden;
     max-height: 100vh;
 }
 
 .blur{
     filter: blur(2px);
 }
-
 }
