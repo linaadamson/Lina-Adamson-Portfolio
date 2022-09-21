@@ -7,7 +7,7 @@ tl.to('.intro', {y:'-100%', duration: 1.5, delay: 0.5});
 tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 0.5});
 tl.to('.hero-text', {x: '0%', duration: 1.5});
 tl.to('.hero-img', {x: '0%', duration: 1});
-tl.fromTo('.hero-img-cover', {opacity: 0.3}, {opacity: 1, duration: 1.5});
+tl.fromTo('.hero-img', {opacity: 0.3}, {opacity: 1, duration: 1.5});
 tl.to('.social-icons', {y: '0%', duration: 1}, '-=1.7');
 
 
