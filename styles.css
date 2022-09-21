@@ -129,7 +129,7 @@ nav{
     width: 48%;
     margin: 1.3rem auto 0;
     transform: translateX(-150%);
-    -webkit-transform: translateX(150%);
+    -webkit-transform: translateX(-150%);
 }
 
 .big-text{
@@ -703,6 +703,10 @@ html {
     width: 140px;
 }
 
+/* WEBSITE INTRO */
+.intro {
+   text-align: center;
+}
 
 /* HERO SECTION */
 .hero-section {
@@ -870,7 +874,7 @@ footer {
 .footer-text {
     left: 0;
     bottom: 10px;
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
 
