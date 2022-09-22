@@ -14,7 +14,6 @@ tl.to('.social-icons', {y: '0%', duration: 1}, '-=1.7');
 
 // TAG CLOUD TEXT SPHERE
 let w = window.innerWidth;
-console.log(w);
 
 const texts = [
     'HTML', 'CSS', 'Javascript',
@@ -40,17 +39,14 @@ if (w > 1500) {
 
 else if (w <= 1500 && w > 1030) {
     sphereMove (230);
-    console.log('false');
 }
 
 else if (w <= 1030 && w > 565) {
    sphereMove (160);
-    console.log('true');
 }
 
 else if (w <= 565) {
     sphereMove (130);
-    console.log('last');
 }
 
 let color = '#FDCC05';
@@ -148,3 +144,37 @@ const navSlide = () => {
 burger.addEventListener('click', () => {
    navSlide();
 });
+
+
+// SEND CONTACT FORM
+
+const submitBtn = document.querySelector('.submit-btn');
+const contactForm = document.querySelector('.contact-form');
+const fullName = document.getElementById('name');
+const email = document.getElementById('email');
+const number= document.getElementById('number');
+const message = document.getElementById('message');
+
+
+contactForm.addEventListener('submit', (e) => {sendMail(e)})
+
+function sendMail(e) {
+    e.preventDefault();
+
+    let params = {
+        name: fullName.value,
+        email: email.value,
+        number: number.value,
+        message: message.value,
+    };
+
+        emailjs.send('service_sdp9fsl', 'template_w25ze9g', params, 'QVc5VUgbLlDoK3v2J')
+        .then(
+          function(value) { submitBtn.innerText = 'Sent' },
+            function(error) {
+                submitBtn.innerText = 'Please Try Again'
+                console.log('Failed to send message', error); }
+
+        );
+
+}
