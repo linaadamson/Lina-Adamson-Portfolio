@@ -168,13 +168,14 @@ function sendMail(e) {
         message: message.value,
     };
 
+    submitBtn.innerText = 'Sending...';
+
         emailjs.send('service_sdp9fsl', 'template_w25ze9g', params, 'QVc5VUgbLlDoK3v2J')
         .then(
           function(value) { submitBtn.innerText = 'Sent' },
-            function(error) {
-                submitBtn.innerText = 'Please Try Again'
-                console.log('Failed to send message', error); }
+          function(error) {
+            submitBtn.innerText = 'Please Try Again'
+            console.log('Failed to send message', error); }
 
         );
-
 }
