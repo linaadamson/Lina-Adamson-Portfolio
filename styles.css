@@ -374,6 +374,7 @@ nav{
     position: relative;
     flex: 1;
     overflow-x: hidden;
+
 }
 
 .project-desc p {
@@ -756,12 +757,18 @@ html {
     margin-top: 0;
     display: grid;
     place-items: center;
-}
 
+
+
+}
+.tagcloud{
+    width: 300px !important;
+}
 /* QUALIFICATIONS */
 .qualification-sections {
     width: 90vw;
     flex-direction: column;
+
 }
 
 .qualification-btn {
@@ -813,7 +820,7 @@ html {
 .left-slide,
 .right-slide{
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 20px;
 }
 
