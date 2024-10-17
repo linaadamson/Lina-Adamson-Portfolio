@@ -23,10 +23,16 @@ const texts = [
   "GSAP",
   "Git",
   "Netlify",
-  "Excel",
   "Github",
   "Airtable",
   "mySQL",
+  "PHP",
+  "Laravel",
+  "Vue",
+  "Node",
+  "Tailwind",
+  "Typescript",
+  "Apache",
 ];
 
 function sphereMove(radius) {
@@ -174,7 +180,7 @@ function sendMail(e) {
   submitBtn.innerText = "Sending...";
 
   emailjs
-    .send("service_sdp9fsl", "template_w25ze9g", params, "QVc5VUgbLlDoK3v2J")
+    .send("service_wrznkym", "template_w25ze9g", params, "QVc5VUgbLlDoK3v2J")
     .then(
       function (value) {
         submitBtn.innerText = "Sent";
