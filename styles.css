@@ -170,6 +170,7 @@ nav {
   background-color: #121426;
   font-size: 1rem;
   padding: 0.8rem 2rem;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -760,19 +761,15 @@ footer {
     margin-top: 0;
     display: grid;
     place-items: center;
-
-
-
-}
-.tagcloud{
+  }
+  .tagcloud {
     width: 300px !important;
-}
-/* QUALIFICATIONS */
-.qualification-sections {
+  }
+  /* QUALIFICATIONS */
+  .qualification-sections {
     width: 90vw;
     flex-direction: column;
-
-}
+  }
 
   .qualification-btn {
     padding: 2.5rem 0;
